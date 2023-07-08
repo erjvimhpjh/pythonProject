@@ -80,42 +80,6 @@ def welcome(message):
 
 
 
-# @bot.message_handler(content_types=['text'])
-# def welcome(message):
-#     if message.text.lower() == "/help":
-#         bot.send_message(message.chat.id, 'Вот все команды на которые отвечает бот')
-#     elif message.text == "Help":
-#         bot.send_message(message.chat.id, 'Вот все команды на которые отвечает бот')
-
-
-# @bot.message_handler(commands=['Help'])
-# def welcome(message):
-#     bot.send_message(message.chat.id, "Вот все команды на которые отвечает бот")
-
-
-# # Функція-обробник команди /help
-# def help(update, context):
-#     command_list = [
-#         "/help - Отримати список команд",
-#         # Додайте інші команди тут з описом їх призначення
-#     ]
-#     response = "\n".join(command_list)
-#     context.bot.send_message(chat_id=update.effective_chat.id, text=response)
-#
-# # Ініціалізація бота та додавання обробників команд
-# def main():
-#     updater = Updater(token='YOUR_TOKEN', use_context=True)
-#     dispatcher = updater.dispatcher
-#
-#     # Додавання обробників команд
-#     dispatcher.add_handler(CommandHandler("help", help))
-#
-#     # Запуск бота
-#     updater.start_polling()
-#     updater.idle()
-#
-# if __name__ == '__main__':
-#     main()
 
 
 
